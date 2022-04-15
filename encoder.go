@@ -115,7 +115,7 @@ func (b *encoder) buildQueryForStruct(rv reflect.Value, parentNode string) {
 			continue
 		}
 
-		tag := ft.Tag.Get("query")
+		tag := ft.Tag.Get("form")
 		//all ignore
 		if tag == "-" {
 			continue
